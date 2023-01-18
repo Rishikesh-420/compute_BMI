@@ -1,0 +1,41 @@
+package com.company;
+import java.util.Scanner;
+
+public class ComputeLoan {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println(" person's weight in kilograms (or pounds)");
+        double weight = s.nextDouble();
+
+        System.out.println(" height in meters (or feet)");
+        double height = s.nextDouble();
+       
+        double BMI =weight/(height*height);
+        System.out.println(BMI);
+
+        if(BMI < 16){
+            System.out.println("Serious underweight");
+        }
+        else if (BMI <18){
+            System.out.println("underweight");
+        }
+        else if(BMI < 24){
+            System.out.println("normal weight");
+        }
+        else if(BMI<29){
+            System.out.println("overweight");
+        }
+        else if(BMI < 35){
+            System.out.println("SERIOUSLY OVERWEIGHT");
+        }
+        else {
+            System.out.println("GRAVELY OVERWEIGHT");
+        }
+
+
+
+
+
+
+    }
+}
